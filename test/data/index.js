@@ -2,7 +2,7 @@
 
 var errorFrame = require('./errorFrame');
 var setupFrame = require('./setupFrame');
-var reqResFrame = require('./reqResFrame');
+var reqTypeFrame = require('./reqTypeFrame');
 var responseFrame = require('./responseFrame');
 
 module.exports = {
@@ -22,12 +22,15 @@ module.exports = {
     // --------------------------------------------
     //  Request Response frame
     // --------------------------------------------
-    REQ_RES_DATA: reqResFrame.REQ_RES_DATA,
-    REQ_RES_META: reqResFrame.REQ_RES_META,
+    REQ_RES_DATA: reqTypeFrame.REQ_RES_DATA,
+    REQ_RES_META: reqTypeFrame.REQ_RES_META,
 
-    reqResFrame: reqResFrame.reqResFrame,
-    reqResFrameWithData: reqResFrame.reqResFrameWithData,
-    reqResFrameWithMeta: reqResFrame.reqResFrameWithMeta,
+    reqResFrame: reqTypeFrame.reqResFrame,
+    reqResFrameWithData: reqTypeFrame.reqResFrameWithData,
+    reqResFrameWithMeta: reqTypeFrame.reqResFrameWithMeta,
+    reqStreamFrame: reqTypeFrame.reqStreamFrame,
+    reqStreamFrameWithData: reqTypeFrame.reqStreamFrameWithData,
+    reqStreamFrameWithMeta: reqTypeFrame.reqStreamFrameWithMeta,
 
     // --------------------------------------------
     //  Response frame
